@@ -1,0 +1,316 @@
+.border {
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.align {
+    align-items: center;
+}
+
+.bg-black {
+    background: transparent;
+    color: white;
+}
+
+.bg-grey {
+    background-color: rgba(18,18,18,0.85);
+    backdrop-filter: blur(8px);
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.m1 {
+    margin: 5px;
+}
+
+.p1 {
+    padding: 10px;
+}
+
+/* =========================
+   SCROLLBAR
+   ========================= */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #535353;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
+
+/* =========================
+   SONG LIST
+   ========================= */
+.songlist {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.songlist ul {
+    padding: 0 12px;
+}
+
+.songlist ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    cursor: pointer;
+    padding: 12px 16px;
+    margin: 12px 0;
+    border-radius: 25px;
+    background: rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+.songlist ul li:hover {
+    background: rgba(255, 60, 172, 0.25);
+}
+
+/* =========================
+   SONG BUTTONS
+   ========================= */
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.songbuttons img {
+    cursor: pointer;
+}
+
+/* =========================
+   HAMBURGER
+   ========================= */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger img {
+    width: 26px;
+    height: 26px;
+}
+/* ===============================
+   FINAL MOBILE HEADER BEHAVIOR
+   =============================== */
+
+@media (max-width: 800px) {
+
+    /* Header layout */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 10px 12px;
+        height: auto;
+    }
+
+    /* Hamburger LEFT */
+    .hamburger {
+        display: block;
+        order: 1;
+    }
+
+    /* Hide logo completely */
+    .logo {
+        display: none;
+    }
+
+    /* Search closer to hamburger, responsive width */
+    .search-box {
+    order: 2;
+    position: static;
+    transform: none;
+    width: clamp(140px, 60vw, 260px);
+    height: 38px;
+    padding: 0 12px;
+}
+
+
+    .search-box input {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    /* Hide auth buttons */
+    .buttons {
+        display: none;
+    }
+}
+/* ===============================
+   MOBILE SIDEBAR (FAVOURITES)
+   =============================== */
+
+@media (max-width: 800px) {
+
+    .left {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        z-index: 500;
+        transition: left 0.3s ease;
+        border-radius: 0 20px 20px 0;
+        padding-top: 70px;
+        display: block;
+    }
+
+    .left.active {
+        left: 0;
+    }
+}
+/* ===============================
+   MOBILE PLAYBAR FIX
+   =============================== */
+
+@media (max-width: 800px) {
+
+    .playbar {
+        position: fixed;
+        bottom: 8px;
+        right: 20%;
+        transform: translateX(-50%);
+        width: 96%;
+        padding: 10px 14px;
+        border-radius: 18px;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .playbar .song-name {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .playbar .song-time {
+        font-size: 12px;
+    }
+
+    .playbar .songbuttons {
+        position: static;
+        transform: none;
+        gap: 18px;
+    }
+
+    .playbar .songbuttons img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .seekbar {
+        position: static;
+        width: 100%;
+        height: 4px;
+    }
+}
+/* ===============================
+   FORCE FULL-WIDTH ON MOBILE
+   =============================== */
+@media (max-width: 800px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Main container full width */
+    .container {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    /* Right section fills screen */
+    .right {
+        width: 100vw;
+        margin: 0;
+        border-radius: 20px;
+        min-height: 100vh;
+    }
+    .left {
+        width: 70vw;
+        margin: 0;
+        border-radius: 20px;
+        min-height: 100vh;
+    }
+
+    /* Remove extra spacing */
+    .playlist {
+        padding: 12px;
+    }
+
+    /* Header full width */
+    .header {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    /* Card container full width */
+    .cardContainer {
+        width: 100%;
+        margin: 8px 0;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 800px) {
+    .playbar {
+        width: calc(100% - 12px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+/* ===============================
+   SIDEBAR CLOSE (X) BUTTON
+   =============================== */
+
+.close-sidebar {
+    display: none;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 800px) {
+
+    .close-sidebar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 16px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 600;
+        cursor: pointer;
+    }
+
+    .close-sidebar img {
+        width: 22px;
+        height: 22px;
+    }
+}

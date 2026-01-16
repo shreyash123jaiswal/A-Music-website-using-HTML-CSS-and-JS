@@ -1,0 +1,8 @@
+- [x] Add media queries for tablets (768px to 1024px) in utility.css
+- [x] Adjust sidebar width and layout for tablets
+- [x] Modify card container and card sizes for tablets
+- [x] Adjust playbar positioning and size for tablets
+- [x] Refine mobile styles for phones (below 768px) if needed
+- [x] Test responsiveness across devices
+- [x] Fix playbar position for desktop, tablets, and phones (including iOS safe areas)
+- [x] Make seekbar and song name visible in mobile view

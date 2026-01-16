@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utility.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container flex bg-black">
+    <div class="left">
+      <div class="home bg-grey rounded m1 p1">
+        <!-- <div class="logo invert"><img src="logo.svg" />
+          <h3>Muzzic</h3>
+        </div> -->
+        <!-- Close button (mobile only) -->
+<div class="close-sidebar">
+  <img src="img/exit.svg" class="invert" alt="close">
+</div>
+
+        <ul>
+          <li><img class="invert" src="img/home.svg" alt="Home" />Home</li>
+          <li><img class="invert" src="img/useraccount.svg" alt="Home" />Your Account</li>
+        </ul>
+      </div>
+      <div class="library bg-grey rounded m1 p1">
+        <div class="heading">
+          <h2>Let's Listen Together</h2>
+        </div>
+        <div class="songlist">
+          <ul>
+
+          </ul>
+        </div>
+        <div class="footer">
+          <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+          <div><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a></div>
+          <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></div>
+          <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></div>
+          <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></div>
+          <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="right bg-grey rounded p1">
+      <div class="header">
+        <div class="logo "><img width="100%" src="img/music.png" />
+          <h3>Muzzic</h3>
+        </div>
+        <div class="search-box">
+          <img src="img/search.svg" class="search-icon invert" />
+          <input type="text" placeholder="What do you want to listen to?" />
+        </div>
+        <!-- Hamburger (mobile only) -->
+        <div class="hamburger">
+          <img src="img/hamburger.svg" class="invert" alt="menu">
+        </div>
+
+        <div class="buttons">
+          <button class="sign">Sign up</button>
+          <button class="log">Log in</button>
+        </div>
+      </div>
+      <div class="playlist">
+        <h1>Trending in India</h1>
+        <div class="cardContainer">
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://mosaic.scdn.co/300/ab67616d00001e0236fab4f7e48d1512f83dac8bab67616d00001e023a25298afa26d7dcea744c68ab67616d00001e029126de38e0b2c868f8fdb460ab67616d00001e02bdbfa224f9c1f5c657c4250e">
+            <h2>All in One</h2>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://mosaic.scdn.co/300/ab67616d00001e021192ae62dfe52262a3cc3fedab67616d00001e024303bef532de839bbdc0ed95ab67616d00001e02459d675aa0b6f3b211357370ab67616d00001e02626fb1736f04466054ff7dd4">
+            <h2>English Hits</h2>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://mosaic.scdn.co/300/ab67616d00001e0212477cc16ddd23543bc1814fab67616d00001e0222287a5cc976690b88259babab67616d00001e026259375c88ed15dbb57a951bab67616d00001e026d05db2c7253b8b9cc5ef008">
+            <h2>Punjabi Hits</h2>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://mosaic.scdn.co/300/ab67616d00001e0252fe6875028c892308ffc2f7ab67616d00001e0285c5968be0d0d9c545241124ab67616d00001e02bbc280510fa8d8c4e30f3b19ab67616d00001e02e46104d82a7ca20d7efc7d97">
+            <h2>Hindi Hits</h2>
+          </div>
+
+          <h1>Popular Artist</h1>
+        <div class="cardContainer circular-images">
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616100005174bc7e4fffd515b47ff1ebbc1f">
+            <h2>Yo Yo Honey Singh</h2>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab676161000051748a4c60d0eebe893f72e42979">
+            <h2>Karan Aujla</h2>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:15px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://imgs.search.brave.com/XtOdQ8wX97ghjEQQyQTwhSkWf73t_dlYhB2LSLeEW-Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jLnNh/YXZuY2RuLmNvbS9h/cnRpc3RzL0FyaWpp/dF9TaW5naF8wMDRf/MjAyNDExMTgwNjM3/MTdfNTAweDUwMC5q/cGc">
+            <h2>Arijit Singh</h2>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84">
+            <h2>Atif Aslam</h2>
+          </div>
+        </div>
+        <h1>Explore More</h1>
+        <div class="cardContainer explore-grid">
+          
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg">
+            <h2>Global Top 50</h2>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg">
+            <h2>India Top 50</h2>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg">
+            <h2>Viral 50 Globaly</h2>
+          </div>
+
+          <div class="card">
+            <div class="play">
+              <svg viewBox="0 4 24 24" style="width:20px;height:20px;fill:black;transform:translateX(1.5px);">
+                <path
+                  d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                </path>
+              </svg>
+            </div>
+            <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_in_default.jpg">
+            <h2>Viral 50 in India</h2>
+          </div>
+
+        </div>
+
+        <div class="playbar">
+          <div class="song-name"></div>
+          <div class="song-time">0:00 / 0:00</div>
+          <div class="seekbar">
+            <div class="progress"></div>
+            <div class="circle">
+            </div>
+          </div>
+          <div class="songinfo">
+
+          </div>
+          <div class="songbuttons">
+            <img id="previous" src="img/prev.svg">
+            <img id="play" src="img/plays.svg">
+            <img id="next" src="img/next.svg">
+          </div>
+          <div class="songtime">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
